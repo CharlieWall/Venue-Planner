@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="planner.venue.venue">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android:permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,40 +12,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".mainMenu" android:screenOrientation="landscape">
+        <activity
+            android:name=".mainMenu"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".tableViewer" android:screenOrientation="landscape">
+        <activity
+            android:name=".tableViewer"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".displayMenu" android:screenOrientation="landscape">
+        <activity
+            android:name=".displayMenu"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".tablePopUp" android:theme ="@style/AppTheme.popUpTheme" android:screenOrientation="landscape">
+        <activity
+            android:name=".tablePopUp"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.popUpTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".addStaffMenu"
+        <activity
+            android:name=".addStaffMenu"
             android:screenOrientation="landscape" />
         <activity
             android:name=".administrationMenu"
@@ -50,10 +58,8 @@
         <activity
             android:name=".personalizationMenu"
             android:screenOrientation="landscape" />
-
+        <activity android:name=".Login" />
+        <activity android:name=".Register"></activity>
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android:permission.READ_EXTERNAL_STORAGE"/>
 
 </manifest>
