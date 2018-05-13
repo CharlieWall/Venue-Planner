@@ -2,10 +2,12 @@ package planner.venue.venue;
 
 public class UserDetails {
 
-    String fName;
-    String lName;
-    String usrName;
-    String Pswrd;
+    //Developed by Charlie Wall
+
+    private String fName;
+    private String lName;
+    private String usrName;
+    private String Pswrd;
 
     public void setfName(String fName){
         this.fName = fName;

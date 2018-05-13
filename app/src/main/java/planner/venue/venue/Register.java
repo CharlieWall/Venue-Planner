@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 public class Register extends AppCompatActivity {
 
+    //Developed by Charlie Wall
+
     Database Helper = new Database(this);
 
     @Override

@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
 
+    //Developed by Charlie Wall
+
     Database Helper = new Database(this);
 
     @Override
