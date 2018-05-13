@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".mainMenu"
-            android:screenOrientation="landscape">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -58,8 +58,10 @@
         <activity
             android:name=".personalizationMenu"
             android:screenOrientation="landscape" />
-        <activity android:name=".Login" />
-        <activity android:name=".Register"></activity>
+        <activity android:name=".Login"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Register"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>

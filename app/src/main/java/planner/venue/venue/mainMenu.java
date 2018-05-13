@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class mainMenu extends AppCompatActivity {
 
-    Button tableView, menuView, adminView, personalView;
+    Button loginView, tableView, menuView, adminView, personalView;
 
     TextView t1;
 
@@ -19,10 +19,19 @@ public class mainMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
+        loginView = (Button)findViewById(R.id.loginButton);
         tableView = (Button)findViewById(R.id.viewTables);
         adminView = (Button)findViewById(R.id.adminMenuButton);
         menuView = (Button)findViewById(R.id.menuButton);
         personalView = (Button)findViewById(R.id.personalButton);
+
+        loginView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mainMenu.this, Login.class);
+                startActivity(intent);
+            }
+        });
 
         tableView.setOnClickListener(new View.OnClickListener() {
             @Override

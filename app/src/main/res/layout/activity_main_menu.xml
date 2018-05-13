@@ -38,6 +38,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+
+        <Button
             android:id="@+id/adminMenuButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
